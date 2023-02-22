@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="play.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-caret-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="media/nathaniel-bassey-new.jpeg" class="song-img">
+            <h1>nathaniel-bassey</h1>
+            <p>--Casting Crown--</p>
+
+            <audio id="song">
+                <source src="media/Casting Crown.mp4" type="audio/mp3">
+            </audio>
+            <input type="range" value="0" id="progress">
+            <div class="control">
+                <div>
+                    <i class="fa-solid fa-stop" id="stop"></i>
+                </div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+
+            </div>
+        </div>
+    </div>
+    <script src="play.js"></script>
+</body>
+
+</html>
